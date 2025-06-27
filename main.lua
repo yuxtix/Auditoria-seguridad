@@ -61,6 +61,13 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "http spy",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Http-Spy-41029"))()
+   end,
+})
+
 
 local Tab = Window:CreateTab("Informacion", 4483362458) -- Title, Image
 
