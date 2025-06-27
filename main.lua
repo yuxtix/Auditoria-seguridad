@@ -6,7 +6,7 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "Auditoria Para juegos",
    LoadingSubtitle = "Por yuxtix",
    ShowText = "Rayfield", -- Para que los usuarios móviles puedan mostrar Rayfield, cambia esto si deseas
-   Theme = "Default", -- Verifica https://docs.sirius.menu/rayfield/configuration/themes para los temas disponibles
+   Theme = "Amethyst", -- Verifica https://docs.sirius.menu/rayfield/configuration/themes para los temas disponibles
 
    ToggleUIKeybind = "K", -- Tecla para mostrar/ocultar la interfaz (por ejemplo: "K" o Enum.KeyCode)
 
@@ -60,3 +60,13 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet("https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source"))()
    end,
 })
+
+
+local Tab = Window:CreateTab("Informacion", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("")
+
+
+local Label = Tab:CreateLabel("Creditos", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+local Paragraph = Tab:CreateParagraph({Title = "Creador General:", Content = "Yuxtix",})
+local Paragraph = Tab:CreateParagraph({Title = "Creador Dex Studio:", Content = "moon",})
