@@ -81,6 +81,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/aemos2/Skibidihub/ref
 })
 
 local Button = Tab:CreateButton({
+   Name = "Blue Red hub",
+   Callback = function()
+   
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexcirer/Alexcirer/refs/heads/main/V21"))()
+
+      end,
+})
+
+
+local Button = Tab:CreateButton({
    Name = "Karol Hub 100 games (key: firstsigmahubupdate) ",
    Callback = function()
    setclipboard("firstsigmahubupdate")
