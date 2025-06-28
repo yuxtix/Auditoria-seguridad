@@ -26,21 +26,18 @@ local Window = Rayfield:CreateWindow({
    },
 
    KeySystem = false, -- Activa el sistema de claves si lo estableces en true
-   KeySettings = {
-      Title = "Sin título", -- Título de la ventana del sistema de claves
-      Subtitle = "Sistema de Claves", -- Subtítulo
-      Note = "No se proporciona un método para obtener la clave", -- Indica al usuario cómo obtener la clave
-      FileName = "Key", -- Usa un nombre único para evitar conflictos con otros scripts que usen Rayfield
-      SaveKey = true, -- Guarda la clave del usuario, pero si cambias la clave, ya no podrá usar el script
-      GrabKeyFromSite = false, -- Si está en true, debes poner en `Key` el enlace RAW desde donde se obtendrá la clave
-      Key = {"Hello"} -- Lista de claves aceptadas por el sistema. Puede ser enlaces RAW (pastebin, github, etc.) o cadenas simples
-   }
    
 })
+	
 
    local Tab = Window:CreateTab("Herramientas", 4483362458) -- Title, Image
-local Section = Tab:CreateSection("Todo Gratis")
-local Button = Tab:CreateButton({
+
+   local Section = Tab:CreateSection("Información")
+local Label = Tab:CreateLabel("Tu Executor es: "..  identifyexecutor(), "shield-plus", Color3.fromRGB(0, 255, 0), false) -- Title, Icon, Color, IgnoreTheme
+
+
+   local Section = Tab:CreateSection("Todo Gratis")
+   local Button = Tab:CreateButton({
    Name = "Dex V4 (como Roblox studio)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
