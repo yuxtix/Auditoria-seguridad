@@ -68,6 +68,33 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Tab = Window:CreateTab("Hubs", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("")
+
+local Button = Tab:CreateButton({
+   Name = "Skibidi Hub",
+   Callback = function()
+   
+loadstring(game:HttpGet("https://raw.githubusercontent.com/aemos2/Skibidihub/refs/heads/main/SkibidiHUB.txt"))()
+      end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Karol Hub 100 games (key: firstsigmahubupdate) ",
+   Callback = function()
+   setclipboard("firstsigmahubupdate")
+   Rayfield:Notify({
+   Title = "Copiado",
+   Content = "La llave de acceso se ah copiado a tu portapapeles",
+   Duration = 1.5,
+   Image = 4483362458,
+})
+
+   loadstring(game:HttpGet("http://karolhub.fwh.is/karolhub.txt"))();
+
+      end,
+})
 
 local Tab = Window:CreateTab("Informacion", 4483362458) -- Title, Image
 
